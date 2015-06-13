@@ -1,0 +1,13 @@
+{
+	"parser": "babel-eslint",
+	"env": {
+		"node": true,
+		"es6": true
+	},
+	"rules": {
+		// Code style
+		"indent": [2, "tab"],
+		"quotes": [2, "single"],
+		"no-underscore-dangle": 0
+	}
+}

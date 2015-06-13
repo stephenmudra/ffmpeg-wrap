@@ -1,22 +1,30 @@
 {
-  "name": "ffmpeg-wrap",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/stephenmudra/ffmpeg-wrap.git"
-  },
-  "author": "Stephen Mudra",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/stephenmudra/ffmpeg-wrap/issues"
-  },
-  "homepage": "https://github.com/stephenmudra/ffmpeg-wrap",
-  "dependencies": {
-    "lodash": "^3.8.0"
-  }
+	"name": "ffmpeg-wrap",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"lint": "eslint src",
+		"build": "babel src --out-dir lib",
+		"watch": "babel src --watch --out-dir lib",
+		"test": "mocha --compilers js:babel/register"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/stephenmudra/ffmpeg-wrap.git"
+	},
+	"author": "Stephen Mudra",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/stephenmudra/ffmpeg-wrap/issues"
+	},
+	"homepage": "https://github.com/stephenmudra/ffmpeg-wrap",
+	"dependencies": {},
+	"devDependencies": {
+		"babel": "^5.5.7",
+		"babel-eslint": "^3.1.15",
+		"chai": "^3.0.0",
+		"eslint": "^0.22.1",
+		"mocha": "^2.2.5"
+	}
 }
