@@ -6,20 +6,19 @@ A basic Node FFMpeg wrapper, easy to use, chainable ffmpeg cli generator and run
 ## Examples
 Set FFMpeg Path, by default it uses whatever is in the path
 
-`FfmpegCommand.ffmpegBinary('path/to/ffmpeg')`
+```javascript
+FfmpegCommand.ffmpegBinary('path/to/ffmpeg')
+```
 
 Basic convert file.mov to file.mp4 using ffmpeg default settings
 
-```var command = new FfmpegCommand(); // Returns a FfmpegComand Class
-
+```javascript
+var command = new FfmpegCommand(); // Returns a FfmpegComand Class
 var input = command.input('path/to/file.mov'); // Returns a FfmpegInput Class
-
 var output = command.output('path/to/file.mp4') // Returns a FfmpegOutput Class
-
 command.on('end', function () { console.log('done'); });
-
 command.on('error', function (err) { console.error(err); });
-
-command.run(); // Spawns the ffmpeg Command```
+command.run(); // Spawns the ffmpeg Command
+```
 
 
