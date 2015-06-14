@@ -5,7 +5,7 @@ A basic Node FFMpeg wrapper, easy to use, chainable ffmpeg cli generator and run
 
 ## Examples
 Set FFMpeg Path, by default it uses whatever is in the path
-```FfmpegCommand.ffmpegBinary('path/to/ffmpeg')```
+`FfmpegCommand.ffmpegBinary('path/to/ffmpeg')`
 
 Basic convert file.mov to file.mp4 using ffmpeg default settings
 ```var command = new FfmpegCommand(); // Returns a FfmpegComand Class
