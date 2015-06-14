@@ -1,4 +1,4 @@
 
-module.exports.ffmpeg = require('./lib/ffmpeg.js');
-module.exports.ffprobe = require('./lib/ffprobe.js');
+module.exports.FFMpeg = require('./lib/ffmpeg.js');
+module.exports.FFProbe = require('./lib/ffprobe.js');
 
