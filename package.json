@@ -11,7 +11,9 @@
 		"build": "babel src --out-dir lib",
 		"watch": "babel src --watch --out-dir lib",
 		"test": "mocha --compilers js:babel/register",
-		"docs": "jsdoc src -r -c ./jsdoc.json -d docs"
+		"docs": "jsdoc README.md src -r -c ./jsdoc.json -d docs",
+		"docs-tmpl": "jsdoc README.md src -r -c ./jsdoc.json  --template ./jsdoc-tmpl -d docs",
+		"push-docs": "git subtree split --prefix docs -b gh-pages && git push -f origin gh-pages:gh-pages && git branch -D gh-page"
 	},
 	"repository": {
 		"type": "git",
