@@ -2,12 +2,16 @@
 	"name": "ffmpeg-wrap",
 	"version": "1.1.0",
 	"description": "",
+	"keywords": [
+		"ffmpeg"
+	],
 	"main": "index.js",
 	"scripts": {
 		"lint": "eslint src",
 		"build": "babel src --out-dir lib",
 		"watch": "babel src --watch --out-dir lib",
-		"test": "mocha --compilers js:babel/register"
+		"test": "mocha --compilers js:babel/register",
+		"docs": "jsdoc src -r -c ./jsdoc.json -d docs"
 	},
 	"repository": {
 		"type": "git",
@@ -25,6 +29,7 @@
 		"babel-eslint": "^3.1.15",
 		"chai": "^3.0.0",
 		"eslint": "^0.22.1",
+		"jsdoc": "git+https://github.com/jsdoc3/jsdoc.git",
 		"mocha": "^2.2.5"
 	}
 }

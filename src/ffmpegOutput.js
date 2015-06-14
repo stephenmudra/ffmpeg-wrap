@@ -2,6 +2,15 @@
 
 import FfmpegBase from './ffmpegBase';
 
+/**
+ * A Ffmpeg Output class
+ *
+ * Extended by both the input and output classes
+ *
+ * @returns {FfmpegOutput}
+ * @extends FfmpegBase
+ * @constructor
+ */
 class FfmpegOutput extends FfmpegBase {
 	get outputArgs() {
 		return [].concat(

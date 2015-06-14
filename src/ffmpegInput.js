@@ -2,6 +2,14 @@
 
 import FfmpegBase from './ffmpegBase';
 
+/**
+ * A Ffmpeg Input class
+ *
+ *
+ * @returns {FfmpegInput}
+ * @extends FfmpegBase
+ * @constructor
+ */
 class FfmpegInput extends FfmpegBase {
 	get index() {
 		return this._ffmpeg._inputs.indexOf(this);

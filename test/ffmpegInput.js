@@ -6,7 +6,7 @@ import { assert } from 'chai';
 import Ffmpeg from '../src/ffmpeg';
 import FfmpegInput from '../src/ffmpegInput';
 
-describe('FfmpegInput', function () {
+describe('FFMpegInput', function () {
 	let inputClass = new Ffmpeg().input('file.mp4');
 
 	it('should return FfmpegInput class on Ffmpeg.input()', function () {
