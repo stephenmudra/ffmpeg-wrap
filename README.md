@@ -11,10 +11,15 @@ Set FFMpeg Path, by default it uses whatever is in the path
 Basic convert file.mov to file.mp4 using ffmpeg default settings
 
 ```var command = new FfmpegCommand(); // Returns a FfmpegComand Class
+
 var input = command.input('path/to/file.mov'); // Returns a FfmpegInput Class
+
 var output = command.output('path/to/file.mp4') // Returns a FfmpegOutput Class
+
 command.on('end', function () { console.log('done'); });
+
 command.on('error', function (err) { console.error(err); });
+
 command.run(); // Spawns the ffmpeg Command```
 
 
