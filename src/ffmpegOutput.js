@@ -33,7 +33,7 @@ class FfmpegOutput extends FfmpegBase {
 		if (!audioCodec) {
 			this._options['-c:a'] = ['-an'];
 		} else {
-			this._options['-c:a'] = ['-c:v', audioCodec];
+			this._options['-c:a'] = ['-c:a', audioCodec];
 		}
 
 		return this;
